@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Cold Email Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>✨ AI Email Generator</h1>
+
+    <div class="toggle">
+        <label>
+            🌙 Dark Mode
+            <input type="checkbox" id="modeToggle" onchange="toggleMode()">
+        </label>
+    </div>
+
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="text" id="role" placeholder="Role">
+    <input type="text" id="skills" placeholder="Skills">
+    <input type="text" id="company" placeholder="Company">
+
+    <select id="purpose">
+        <option value="job">Job Application</option>
+        <option value="internship">Internship</option>
+        <option value="sales">Sales</option>
+    </select>
+
+    <button onclick="generateEmail()">🚀 Generate Email</button>
+
+    <textarea id="output" placeholder="Your email will appear here..."></textarea>
+
+    <button onclick="copyEmail()">📋 Copy Email</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
